@@ -1,0 +1,13 @@
+{{extend "layout.html"}}
+
+{{block content}}
+<div class="content">
+    <div class="box center col_10">
+        <h2>出错啦!</h2>
+        <div class="box-body">
+            <p>{{=message}}</p>
+            <p><a href="{{=request.referrer}}">点击这里返回</a></p>
+        </div>
+    </div>
+</div>
+{{end}}

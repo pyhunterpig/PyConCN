@@ -1,0 +1,59 @@
+{{
+def menu(current='home'):
+    for id, caption, link in settings.LAYOUT.MENUS:
+        if id == current:
+            out.write('<li class="active"><a href="%s"><span>%s</span></a></li>' % (link, caption), escape=False)
+        else:
+            out.write('<li><a href="%s"><span>%s</span></a></li>' % (link, caption), escape=False)
+        pass
+    pass
+pass
+
+def sub_menu(menu_items, *items):
+    if len(items) > 0:
+        first = items[0]
+        items = items[1:]
+    else:
+        first = None
+        items = ()
+    pass
+    
+    out.xml('<ul class="simplemenu noaccordion">')
+    for x in menu_items:
+        if x['name'] == first:
+            if not items:
+                attr = ' class="active"'
+            else:
+                attr = ' '
+            pass
+            li_attr = ' class="expand"'
+            if x.get('subs', None):
+                _class = ' ui-icon-triangle-1-s'
+                link = '#'
+            else:
+                _class = ' ui-icon-blank'
+                link = x.get('link', '#')
+            pass
+            span = '<span class="ui-icon%s"></span>' % _class
+        else:
+            attr = ''
+            li_attr = ''
+            if x.get('subs', None):
+                _class = ' ui-icon-triangle-1-e'
+                link = '#'
+            else:
+                _class = ' ui-icon-blank'
+                link = x.get('link', '#')
+            pass
+            span = '<span class="ui-icon%s"></span>' % _class
+        pass
+        out.xml('<li%s><a href="%s"%s>%s%s</a>' % (li_attr, link, attr, span, x['title']))
+        if x.get('subs', None):
+            sub_menu(x['subs'], *items)
+        pass
+        out.xml('</li>')
+    pass
+    out.xml('</ul>')
+pass
+
+}}

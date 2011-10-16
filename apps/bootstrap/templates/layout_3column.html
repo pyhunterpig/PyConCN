@@ -1,0 +1,28 @@
+{{extend "layout.html"}}
+
+{{block content_container}}
+    <!-- Conent of group -->
+    <table border="0" cellspacing="10px" cellpadding="4px" style="width:100%">
+        <tr>
+            <td width="200px" valign="top">
+                {{block content_sidebar}}
+                {{end}}
+            </td>
+            <td width="*" valign="top">
+                <div class="content_tool">
+                    {{block content_tool}}
+                    {{end}}
+                </div>
+                <div class="clearfix" style="margin:5px;">
+                    {{block content_main}}
+                    {{end}}
+                </div>
+            </td>
+            <td width="400px" valign="top">
+                {{block content_right}}
+                {{end}}
+            </td>
+        </tr>
+    </table>
+{{end}}
+

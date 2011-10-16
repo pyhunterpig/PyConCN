@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{=settings.LAYOUT.TITLE}}</title>
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('css/bootstrap.min.css', ver='1.3.0')}}" />
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('css/layout.css')}}" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="{{=url_for_static('js/ie9-js.js', ver='2.1b4')}}"></script>
+<![endif]-->
+<script type="text/javascript" src="{{=url_for_static('js/jquery.min.js', ver='1.6.4')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/bootstrap-alerts.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/layout.js')}}"></script>
+{{block meta}}
+{{end}}
+</head>
+
+<body>
+{{include "menu.html"}}
+{{block topbar}}
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">{{=settings.LAYOUT.TITLE}}</a>
+          {{block nav}}
+          <ul class="nav">
+            {{block menu}}
+            {{menu('home')}}
+            {{end}}            
+          </ul>
+          {{end}}
+          {{''' 暂时先注释}}
+          {{block userinfo}}
+              <p class="pull-right loginbar">
+                  {{if hasattr(request, 'user') and request.user:}}
+                      <span>{{=_('Welcome')}} {{=request.user.username}}</span> | <a href="/logout">{{=_('Logout')}}</a>
+                  {{else:}}
+                      <span>{{=_("You've not loginned yet!")}}</span> <a href="/login">{{=_('Login')}}</a> | <a href="/register">{{=_('Register')}}</a>
+                  {{pass}}
+              </p>
+          {{end}}   
+          {{'''}}       
+        </div><!--END container-->
+      </div><!--END fill-->
+    </div><!--END topbar-->
+    {{end}}
+<div class="container" id="main_container">
+    <!--[if lt IE 7]><div style=" clear: both; height: 59px; padding:0 0 0 15px; position: relative;"> <a target="_blank" href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.cn/img/banner/upgrade.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+    {{if not True:}} <!--In what condition to show messages-->
+        {{include "inc_show_messages.html"}}
+        {{message('Test', 'info')}} <!--Show message "Test" with level info, optical levels are "warning", "success", "error", "info"-->
+        {{message('<b>Test:</b> testest.', 'success')}}
+    {{pass}}
+
+    {{block content}}
+    {{end}}
+        <div id="footer">
+            {{<< settings.get_var('LAYOUT/COPYRIGHT')}}
+        </div><!--END footer-->
+    </div><!--END container-->
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-26284394-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+</body>
+</html>

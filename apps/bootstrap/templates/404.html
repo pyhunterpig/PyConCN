@@ -1,0 +1,10 @@
+{{extend "bootstrap_layout.html"}}
+
+{{block content}}
+        <h1>您要的东西不在这儿</h1>
+        <div class="alert-message block-message error">
+        <p><strong>您要的东西不在这儿</strong> 也许您使用了一个不正确的地址，您可以：</p>
+        <br />
+        <a href="{{=request.referrer or '/'}}" class="btn large">回到上一页</a><span style="font-size:20px;">&nbsp;&nbsp;或者&nbsp;&nbsp;</span><a href="/" class="btn large">回到首页</a>
+      </div>
+{{end}}

@@ -1,0 +1,10 @@
+{{
+def message(msg, category="info"):
+    out.xml('<div class="alert-message fade in %s">' % (category))
+    out.xml('<a href="#" class="close">x</a>')
+    out.xml('<p>')
+    out.xml(msg)
+    out.xml('<p>')
+    out.xml('</div>')
+pass
+}}

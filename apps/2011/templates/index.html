@@ -1,0 +1,110 @@
+{{extend "bootstrap_layout.html"}}
+
+{{block meta}}
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('css/index.css')}}" />
+<script type="text/javascript" src="{{=url_for_static('js/QTransform.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/index.js')}}"></script>
+{{end}}
+
+{{block content}}
+    <div class="hero-unit">
+        <div id="content">
+            <div class="hero-content" id="first-hero">
+                <div class="row show-grid">
+                    <div class="span-one-third" style="width:200px;">
+                        <img src="{{=url_for_static('images/PyConChina.png')}}" alt="PyCon China 2011 Logo" />
+                    </div>
+                    <div class="span-two-thirds" style="width:600px; text-align:right;">
+                        <h1 style="border:none; padding-bottom:0;">PyCon China 2011</h1><h1>Is Here!</h1>
+                        <p>Dec 3, 2011 - Dec 4, 2011 9:30 AM - 6:00 PM</p>
+                        <p>Shanghai, China</p>
+                        <p>Total number of seats: 300</p>
+                        <p>Seats still available.</p>
+                    </div>
+                    <br />
+                    <p style="text-align:right;"><a class="btn primary large" href="/2011/registration ">立即报名！ &raquo;</a></p>
+                </div><!--END grid-->
+            </div><!--END hero-content-->
+            
+            <div class="hero-content" id="second-hero">
+                <h5>金牌赞助商</h5>
+                <div class="row show-grid">
+                    <div class="span3"><a href="http://www.google.com/"><img style="margin-top: 20px;" src="{{=url_for_static('images/sponsors/google.png')}}" alt="Google" width="150" /></a></div>
+                    <div class="span3"><a href="http://www.douban.com/"><img style="margin-top: 35px;" src="{{=url_for_static('images/sponsors/douban.gif')}}" alt="Douban" width="150" /></a></div>
+                    <div class="span3"><img style="margin-top: 20px;" src="{{=url_for_static('images/sponsors/xunpu.png')}}" alt="湖州迅普" width="150" /></div>
+                    <div class="span3"><img src="{{=url_for_static('images/sponsors/liubao.png')}}" alt="遛宝" width="150" /></div>
+                </div><!--END grid-->
+                <br />
+                <h5>媒体支持</h5>
+                <div class="row show-grid">
+                    <div class="span3"><a href="http://www.infoq.com/"><img src="{{=url_for_static('images/sponsors/infoq.gif')}}" alt="InfoQ" width="150" /></a></div>
+                    <div class="span3"><a href="http://www.csdn.net/"><img src="{{=url_for_static('images/sponsors/csdn.gif')}}" alt="CSDN" width="150" /></a></div>
+                    <div class="span3"><a href="http://www.pycon.org/"><img src="{{=url_for_static('images/sponsors/pycon.gif')}}" alt="PyCon" width="150" /></a></div>
+                    <div class="span3"><a href="http://gtugs.org/"><img src="{{=url_for_static('images/sponsors/gtug.gif')}}" alt="Google Technology User Groups" width="150" /></a></div>
+                </div><!--END grid-->
+                <div class="row show-grid">
+                    <div class="span3"><a href="http://python.cn/"><img src="{{=url_for_static('images/sponsors/cpyug.gif')}}" alt="Python 中文社区" width="150" /></a></div>
+                    <div class="span3"><a href="http://topgeek.org/"><img src="{{=url_for_static('images/sponsors/topgeek.gif')}}" alt="TopGeek" width="150" /></a></div>
+                    <div class="span3"><a href="http://woodpecker.org.cn/"><img src="{{=url_for_static('images/sponsors/woodpecker.gif')}}" alt="Woodpecker.org.cn 啄木鸟社区" width="150" /></a></div>
+                    <div class="span3"><a href="mailto:CPUG@googlegroups.com"><img src="{{=url_for_static('images/sponsors/google_groups.gif')}}" alt="Google 网上论坛" width="150" /></a></div>
+                </div><!--END grid-->
+            </div><!--END hero-content-->
+            <!--NEW hero insert here-->
+        </div><!--END content-->
+        <div class="row show-grid" id="hero-selector">
+            <div class="span1" id="first">1</div>
+            <div class="span1" id="second">2</div>
+        </div><!-- END row-->
+    </div><!-- END hero-unit-->
+    <div class="row">
+        <div class="span6">
+          <h2>演讲日程</h2>
+          <ol>
+              <li>欢迎晚宴</li>
+              <li class="has_sub_schedule">组织者介绍、致辞、全球Python代表的视频&darr;
+                  <ul class="sub_schedule">
+                      <li>主办方和赞助者介绍</li>
+                      <li>大会致辞《Python让世界更精彩》- 陈世欣</li>
+                      <li>Video联播《世界各国Python高手的演讲》- 各国Pythoner</li>
+                  </ul>
+              </li>
+              <li class="has_sub_schedule">主题演讲（第一天）&darr;
+                  <ul class="sub_schedule">
+                      <li>《Python ，通向未来之路》 - 沈崴</li>
+                      <li>《Python 之于 Webgame 的应用》- 赖勇浩</li>
+                      <li>《Python在豆瓣的应用》 - 洪强宁</li>
+                      <li>《Google的Python开发：主题待定》 - Damien</li>
+                      <li>《易度PaaS云开发平台技术内幕》 - 潘俊勇</li>
+                      <li>《使用 MQ 解耦应用开发》 - Zoom.Quiet（周琦）</li>
+                  </ul>
+              </li>
+              <li>把酒话英雄 - Python爱好者与嘉宾们晚宴</li>
+              <li class="has_sub_schedule">主题演讲（第二天）&darr;
+                  <ul class="sub_schedule">
+                      <li>《Google的Python开发：主题待定》 - Ryan</li>
+                      <li>《CCP Games的Python开发：主题和演讲人待定》 - 待定</li>
+                      <li>《Web 框架开发思考与实践 — Uliweb》 - Limodou（李迎辉）</li>
+                      <li>《网易的Python开发：主题待定》 - 林伟</li>
+                      <li>《中型角色扮演网络游戏服务器的 python 应用》 - 王健</li>
+                  </ul>
+              </li>
+              <li>快速演讲（产品Demo或技术心得分享）</li>
+          </ol>
+          <p><a class="btn" href="/2011/schedule">详细日程 &raquo;</a></p>
+
+        </div>
+        <div class="span5">
+          <h2>关于 PyCon</h2>
+           <p>世界Python爱好者的盛会PyCon首次在中国举办，由Python软件基金会下的PyCon.Org授权中国办第一次PyCon China Conference。本次大会由GTUG， TopGeek，CPyUG联合举办。</p>
+          <p><a class="btn" href="/2011/about">更多细节 &raquo;</a></p>
+       </div>
+        <div class="span5">
+
+          <h2>近期新闻</h2>
+          <ol>
+              <li>PyCon China 2011 官方网站上线</li>
+              <li>PyCon China 官方微博 <a href="http://weibo.com/pyconcn" target="_blank">@PyConCN</a> 上线</li>
+          </ol>
+        </div>
+      </div>
+{{end}}
