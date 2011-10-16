@@ -2,7 +2,7 @@
     JavaScript for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.14
+    Version: 2011.10.16
 */
 $(function(){
     $("#hero-selector > div").filter(":first").addClass('active').end()
@@ -18,6 +18,7 @@ $(function(){
 	$(".has_sub_schedule").click(function(){
 		                       $(this).children('ul').slideDown('slow').end().siblings('.has_sub_schedule').children('ul').slideUp('slow')
 		                   })
+	$('.speakers img').popover( {title: function(){return $(this).attr('fullname')}, placement: 'below' } )
 })
 
 $(window).load(function(){
@@ -40,17 +41,5 @@ Hero_anim = {
 			}
 			$(document).queue("Animation",FUNC);
 			aniCB()
-	    },
-		second: function() {
-			var FUNC = []
-			$("#second-hero img").css("opacity", 0)
-			                     .each(function(i, e) {
-									 FUNC.push(function( ){$(e).animate({opacity: 1}, 1000, aniCB)})
-									 var aniCB=function() {
-				                         $(document).dequeue("Animation");
-			                         }
-			                         $(document).queue("Animation",FUNC);
-			                         aniCB()
-								 })
-		}
+	     }
 }

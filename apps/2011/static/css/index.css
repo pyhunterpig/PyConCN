@@ -2,7 +2,7 @@
     Styles for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.14
+    Version: 2011.10.16
 */
 @charset "utf-8";
 .hero-unit{overflow:hidden;}
@@ -44,6 +44,10 @@
     transform-origin: 0 0;
 }
 
-#second-hero .span3{height:100px;}
-#second-hero h5{border-bottom: 1px solid #999; margin-bottom:5px;}
 h1{font-family:Stencil,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+.underhero h2 {border:none; text-align:right; padding:0;}
+.underhero {margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #EEEEEE;}
+.underhero img{border:1px solid #FFF;}
+.underhero img:hover{border:1px solid #EEEEEE;}
+.speakers img{width:100px;}
