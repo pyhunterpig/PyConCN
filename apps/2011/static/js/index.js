@@ -18,7 +18,7 @@ $(function(){
 	$(".has_sub_schedule").click(function(){
 		                       $(this).children('ul').slideDown('slow').end().siblings('.has_sub_schedule').children('ul').slideUp('slow')
 		                   })
-	$('.speakers img').popover( {title: function(){return $(this).attr('fullname')}, placement: 'below' } )
+	$('.speakers img').popover( {title: function(){return $(this).attr('alt')}, placement: 'below' } )
 })
 
 $(window).load(function(){
