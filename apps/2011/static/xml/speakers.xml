@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<speakers>
+    <speaker>
+	    <fullname>陈世欣</fullname>
+		<nickname>Sting Chen</nickname>
+		<company>2Style4You</company>
+		<position>CTO</position>
+		<desc>TopGeek社区创办人，现在全球领先的时尚科技公司2Style4You.com任CTO,1999年硕士毕业于上海交通大学计算机系，具有13年的互联网技术和互联网产品技术经验，还发起PMCamp社区等。也是ThinkinLAMP，ShanghaiOnRails，CPyUG，GTUG等社区的参与者或组织者。</desc>
+		<avatar>chenshixin.jpg</avatar>
+		<speech>大会致辞《Python让世界更精彩》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>沈崴</fullname>
+		<nickname></nickname>
+		<company>某创业公司</company>
+		<position>创始人</position>
+		<desc>资深 Python 开发者，高效能服务器 Eurasia 的作者，湖州迅普信息技术有限公司创办人。</desc>
+		<avatar>shenwai.jpg</avatar>
+		<speech>《Python ，通向未来之路》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>赖勇浩</fullname>
+		<nickname></nickname>
+		<company>江苏盛典</company>
+		<position>技术总监</position>
+		<desc>网游行业资深从业者，有丰富的 python 游戏开发经验。由其担纲的代表游戏有，新一代 MMOCAT大作《天下盛境》等。是珠三角技术沙龙的创办人和组委之一。</desc>
+		<avatar>laiyonghao.png</avatar>
+		<speech>《Python 之于 Webgame 的应用》</speech>
+	</speaker>
+	
+    <speaker>
+	    <fullname>洪强宁</fullname>
+		<nickname></nickname>
+		<company>豆瓣</company>
+		<position>首席架构师</position>
+		<desc>豆瓣首席架构师，豆瓣第一位全职员工。清华毕业后，洪强宁一直做嵌入式系统。在2002年开始接触Python语言，从硬件工程师变为软件工程师，对一种语言在计算机底层如何工作有深入的理解。</desc>
+		<avatar>hongqiangning.jpg</avatar>
+		<speech>《豆瓣的Python应用和创新》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>Damien Hou</fullname>
+		<nickname></nickname>
+		<company>Google</company>
+		<position></position>
+		<desc>Google是世界上Python水平最高工程师的云集之地。Python的发明者Guido就在Google。Damien来自Google收购的Slide公司</desc>
+		<avatar>damienhou.jpg</avatar>
+		<speech>《Google的Python开发》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>潘俊勇</fullname>
+		<nickname></nickname>
+		<company>润普科技</company>
+		<position>创始人，CTO</position>
+		<desc>国内python社区最早的布道者之一，2002年开始创办Zope中文社区，同时也是润普公司创始人。2007年转向互联网软件，推出易度云办公(everydo.com)，专注企业云端办公方案。</desc>
+		<avatar>panjunyong.jpg</avatar>
+		<speech>《易度PaaS云开发平台技术内幕》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>黄冬</fullname>
+		<nickname></nickname>
+		<company>土豆网</company>
+		<position>技术副总裁</position>
+		<desc>黄冬现任土豆网技术副总裁，主持设计和运营过多个大型高容量产品和系统。也是中国FreeBSD、Python社区的发起者和积极参与者，啄木鸟社区的创始人之一。此外，他还积极帮助各种创业项目，创立了彩虹流量和xBaynet系列产品。</desc>
+		<avatar>huangdong.jpg</avatar>
+		<speech>《大规模视频网站的计费与流量管理》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>童剑</fullname>
+		<nickname></nickname>
+		<company>新浪网</company>
+		<position></position>
+		<desc>平台架构部总监</desc>
+		<avatar></avatar>
+		<speech>《新浪的AppEngine的Python实现》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>Ryan Ye</fullname>
+		<nickname></nickname>
+		<company>Google</company>
+		<position></position>
+		<desc>Google是世界上Python水平最高工程师的云集之地。Python的发明者Guido就在Google。Ryan来自Google收购的Slide公司</desc>
+		<avatar></avatar>
+		<speech>《Google的Python开发》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>CCP Games</fullname>
+		<nickname></nickname>
+		<company>CCP Games</company>
+		<position></position>
+		<desc>CCPGames是全球第二大的桌面游戏公司，网游实力也很强大，公司里有很多Python的开发高手</desc>
+		<avatar></avatar>
+		<speech>《CCP Games的Python开发》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>李迎辉</fullname>
+		<nickname>Limodou</nickname>
+		<company></company>
+		<position></position>
+		<desc>Python 中文社区创始人及 Python 技术的关键推广者之一。广受欢迎的 Ulipad 编辑器，以及 web框架 Uliweb 的作者。</desc>
+		<avatar>liyinghui.png</avatar>
+		<speech>《Web 框架开发思考与实践 — Uliweb》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>林伟</fullname>
+		<nickname></nickname>
+		<company>网易</company>
+		<position>资深技术主管</position>
+		<desc>网易资深技术主管，17年程序设计经验。</desc>
+		<avatar>linwei.jpg</avatar>
+		<speech>《网易的Python开发》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>王健</fullname>
+		<nickname></nickname>
+		<company>广州黑崖网络科技有限公司</company>
+		<position>总经理兼技术总监</position>
+		<desc>广州黑崖网络科技有限公司总经理兼技术总监。</desc>
+		<avatar>wangjian.jpg</avatar>
+		<speech>《中型角色扮演网络游戏服务器的 python 应用》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>周琦</fullname>
+		<nickname>Zoom.Quiet</nickname>
+		<company>金山软件</company>
+		<position></position>
+		<desc>Python 中文社区创始人 / 管理员，热心于python社区的公益事业，大家熟知的社区“大妈”；OBP及蟒营工程设计者 /主持人；参与并主持各种线上 / 线下活动，主持编撰了《可爱的Python》；坚持用 Pythonic 感化国人进入 FLOSS世界进行学习 / 分享 / 创造！目前就职于金山软件。</desc>
+		<avatar>zhouqi.png</avatar>
+		<speech>《使用 MQ 解耦应用开发》</speech>
+	</speaker>
+</speakers>

@@ -18,7 +18,32 @@ $(function(){
 	$(".has_sub_schedule").click(function(){
 		                       $(this).children('ul').slideDown('slow').end().siblings('.has_sub_schedule').children('ul').slideUp('slow')
 		                   })
-	$('.speakers img').popover( {title: function(){return $(this).attr('alt')}, placement: 'below' } )
+	$.get("/static/xml/speakers.xml", function(data){
+		var $imgs = $(".speakers img")
+		$(data).find("speaker").each(function(i, speaker){
+			var fullname = $(speaker).children("fullname").text()
+			$imgs.each(function(i, e){
+				if ($(e).attr('alt').indexOf(fullname) != -1){
+					var html = ""
+					if ($(speaker).children('nickname').text()){
+						html += '<h4>' + $(speaker).children('nickname').text() + '（' + fullname + '）' + '</h4>'
+					}else{
+						html += '<h4>' + fullname + '</h4>'
+					}
+					html += "<strong>主题：</strong>" + $(speaker).children("speech").text() + '<br />'
+					if ($(speaker).children("company").text()){
+					    html += '<strong>组织：</strong>' + $(speaker).children("company").text() + '<br />'
+					}
+					if ($(speaker).children("position").text()){
+					    html += '<strong>头衔：</strong>' + $(speaker).children("position").text() + '<br />'
+					}
+					html += "<strong>简介：</strong>" + $(speaker).children("desc").text()
+				    html += '<div style="clear:both; "></div>'
+					$(html).insertAfter(e)
+				}
+			})
+		})
+	})
 })
 
 $(window).load(function(){
