@@ -2,7 +2,7 @@
     JavaScript for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.16
+    Version: 2011.10.17
 */
 $(function(){
     $("#hero-selector > div").filter(":first").addClass('active').end()
@@ -13,7 +13,10 @@ $(function(){
                                   var offset = (clicked - current) * 880
                                   $(this).addClass("active").siblings().removeClass("active")
                                   $("#content").animate({"left": "-=" + offset + "px"}, "slow")
-								  Hero_anim[$(this).attr("id")]()
+								  if (Hero_anim[$(this).attr("id")]){
+									  $(document).clearQueue("Animation")
+								      Hero_anim[$(this).attr("id")]()
+								  }
                               })
 	$(".has_sub_schedule").click(function(){
 		                       $(this).children('ul').slideDown('slow').end().siblings('.has_sub_schedule').children('ul').slideUp('slow')
@@ -66,5 +69,20 @@ Hero_anim = {
 			}
 			$(document).queue("Animation",FUNC);
 			aniCB()
-	     }
+	     },
+		second: function(){
+			$("#second-hero .span4").css({position: "relative", left: -50, opacity: 0})
+			$("#second-hero .span11").css({position: "relative", top: 50, opacity: 0})
+			
+			var FUNC=[
+			function() {$("#second-hero .span4").animate({left: 0, opacity: 1}, 1000, aniCB);},
+			function() {$("#second-hero .span11").animate({top: 0, opacity: 1}, 1000, aniCB);}
+			];
+			
+			var aniCB=function() {
+				$(document).dequeue("Animation");
+			}
+			$(document).queue("Animation",FUNC);
+			aniCB()
+		 }
 }
