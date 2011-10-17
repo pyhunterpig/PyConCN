@@ -84,9 +84,19 @@
 	    <fullname>Ryan Ye</fullname>
 		<nickname></nickname>
 		<company>Google</company>
-		<position></position>
-		<desc>Google是世界上Python水平最高工程师的云集之地。Python的发明者Guido就在Google。Ryan来自Google收购的Slide公司</desc>
-		<avatar></avatar>
+		<position>Tech Lead and Senior Software Engineer</position>
+		<desc>
+		<![CDATA[Specializing in developing web applications, social network games and iPhone apps. Interested in server architecture and game engines. 
+		<br /><strong>Specialties:</strong>
+		<br />- Web application architecture design and performance optimization
+        <br />- iPhone application development
+        <br />- Game and graphic programming
+        <br />- Engineering management
+        <br />- Major programming language: Python, Javascript, Objc, ActionScript
+        <br />- Familiar with Perl, C/C++, Java
+        ]]>
+        </desc>
+		<avatar>ryanye.jpg</avatar>
 		<speech>《A Python approach to implement Schemaless model on MySQL》</speech>
 	</speaker>
 	
