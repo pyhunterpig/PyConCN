@@ -26,7 +26,7 @@
 		<company>江苏盛典</company>
 		<position>技术总监</position>
 		<desc>网游行业资深从业者，有丰富的 python 游戏开发经验。由其担纲的代表游戏有，新一代 MMOCAT大作《天下盛境》等。是珠三角技术沙龙的创办人和组委之一。</desc>
-		<avatar>laiyonghao.png</avatar>
+		<avatar>laiyonghao.jpg</avatar>
 		<speech>《Python 之于 Webgame 的应用》</speech>
 	</speaker>
 	
@@ -116,7 +116,7 @@
 		<company></company>
 		<position></position>
 		<desc>Python 中文社区创始人及 Python 技术的关键推广者之一。广受欢迎的 Ulipad 编辑器，以及 web框架 Uliweb 的作者。</desc>
-		<avatar>liyinghui.png</avatar>
+		<avatar>liyinghui.jpg</avatar>
 		<speech>《Web 框架开发思考与实践 — Uliweb》</speech>
 	</speaker>
 	
@@ -146,7 +146,7 @@
 		<company>金山软件</company>
 		<position></position>
 		<desc>Python 中文社区创始人 / 管理员，热心于python社区的公益事业，大家熟知的社区“大妈”；OBP及蟒营工程设计者 /主持人；参与并主持各种线上 / 线下活动，主持编撰了《可爱的Python》；坚持用 Pythonic 感化国人进入 FLOSS世界进行学习 / 分享 / 创造！目前就职于金山软件。</desc>
-		<avatar>zhouqi.png</avatar>
+		<avatar>zhouqi.jpg</avatar>
 		<speech>《使用 MQ 解耦应用开发》</speech>
 	</speaker>
 </speakers>
