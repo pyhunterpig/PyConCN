@@ -47,7 +47,7 @@
 		<position></position>
 		<desc>Google是世界上Python水平最高工程师的云集之地。Python的发明者Guido就在Google。Damien来自Google收购的Slide公司</desc>
 		<avatar>damienhou.jpg</avatar>
-		<speech>《Google的Python开发》</speech>
+		<speech>《Scale web application stack with coro-thread》</speech>
 	</speaker>
 	
 	<speaker>
@@ -75,8 +75,8 @@
 		<nickname></nickname>
 		<company>新浪网</company>
 		<position></position>
-		<desc>平台架构部总监</desc>
-		<avatar></avatar>
+		<desc>新浪网研发中心平台架构部总监，负责系统平台方面的研发和运维管理工作，在云计算技术领域有多年的研发和实践经验。2005年开始负责新浪私有云平台技术的研发，如新浪CDN、动态应用平台、数据库平台、服务器虚拟化平台等大规模分布式技术系统。2009年以来，专注于新一代云平台的建设工作，新浪SAE(SinaApp Engine)、云存储等服务是目前的重点研发项目；他所带领的研发团队思想活跃、技术突出、极具创造力，在云计算领域拥有丰富的经验。新浪的云平台设施于2007年就投入了大规模应用，但是面对新浪微博这种超大规模的SNS应用，仍无可避免地遇到很多新的挑战，因此，新浪正在致力于构建更好的云平台技术。 </desc>
+		<avatar>tongjian.jpg</avatar>
 		<speech>《新浪的AppEngine的Python实现》</speech>
 	</speaker>
 	
@@ -87,7 +87,7 @@
 		<position></position>
 		<desc>Google是世界上Python水平最高工程师的云集之地。Python的发明者Guido就在Google。Ryan来自Google收购的Slide公司</desc>
 		<avatar></avatar>
-		<speech>《Google的Python开发》</speech>
+		<speech>《A Python approach to implement Schemaless model on MySQL》</speech>
 	</speaker>
 	
 	<speaker>
