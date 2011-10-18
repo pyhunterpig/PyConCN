@@ -13,9 +13,9 @@
 	<speaker>
 	    <fullname>沈崴</fullname>
 		<nickname></nickname>
-		<company>某创业公司</company>
-		<position>创始人</position>
-		<desc>资深 Python 开发者，高效能服务器 Eurasia 的作者，湖州迅普信息技术有限公司创办人。</desc>
+		<company></company>
+		<position></position>
+		<desc>资深 python 开发者，高效能服务器 eurasia 的作者。湖州迅普信息技术有限公司创始人，上海乔伊珠宝有限公司董事兼首席架构师，广州遛宝计算机技术有限公司联合创始人、技术总监。</desc>
 		<avatar>shenwai.jpg</avatar>
 		<speech>《Python ，通向未来之路》</speech>
 	</speaker>
@@ -127,7 +127,7 @@
 		<position>资深技术主管</position>
 		<desc>网易资深技术主管，17年程序设计经验。</desc>
 		<avatar>linwei.jpg</avatar>
-		<speech>《网易的Python开发》</speech>
+		<speech>《Python游戏开发探索与发现》</speech>
 	</speaker>
 	
 	<speaker>
