@@ -72,12 +72,16 @@ Hero_anim = {
 	     },
 		second: function(){
 			$("#second-hero .span4").css({position: "relative", left: -50, opacity: 0})
-			$("#second-hero .span11").css({position: "relative", top: 50, opacity: 0})
+			$("#second-hero .span11 > *").css({position: "relative", top: 50, opacity: 0})
 			
 			var FUNC=[
-			function() {$("#second-hero .span4").animate({left: 0, opacity: 1}, 1000, aniCB);},
-			function() {$("#second-hero .span11").animate({top: 0, opacity: 1}, 1000, aniCB);}
+			function() {$("#second-hero .span4").animate({left: 0, opacity: 1}, 1000, aniCB);}
 			];
+			
+			$("#second-hero .span11 > *").each(function(e){
+													var $this = $(this)
+													FUNC.push( function(){$this.animate({top: 0, opacity: 1}, 500, aniCB);} )
+				                             })
 			
 			var aniCB=function() {
 				$(document).dequeue("Animation");
