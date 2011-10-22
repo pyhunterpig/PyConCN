@@ -2,7 +2,7 @@
     JavaScript for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.17
+    Version: 2011.10.22
 */
 $(function(){
     $("#hero-selector > div").filter(":first").addClass('active').end()
@@ -88,5 +88,12 @@ Hero_anim = {
 			}
 			$(document).queue("Animation",FUNC);
 			aniCB()
+		 },
+		 third: function(){
+			$("#third-hero .span-one-third").css({position: "relative", top: -300, opacity: 0})
+			$("#third-hero .span8").css({position: "relative", top: 300, opacity: 0})
+			
+			$("#third-hero .span-one-third").animate({top: 0, opacity: 1}, 1000)
+			$("#third-hero .span8").animate({top: 0, opacity: 1}, 1000)
 		 }
 }
