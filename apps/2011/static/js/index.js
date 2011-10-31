@@ -2,7 +2,7 @@
     JavaScript for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.22
+    Version: 2011.10.31
 */
 $(function(){
     $("#hero-selector > div").filter(":first").addClass('active').end()
@@ -47,10 +47,23 @@ $(function(){
 			})
 		})
 	})
+	
 })
 
 $(window).load(function(){
 	$("#first").trigger("click")
+	
+	function nextHero(){
+		var total = $("#hero-selector > div:last").text()
+		var current = $("#hero-selector > div.active").text()
+		if (current < total) {
+			$("#hero-selector > div.active + div").trigger('click')
+		} else {
+			$("#hero-selector > div:first").trigger('click')
+		}
+	}
+	
+	setInterval(nextHero,10000)
 })
 
 Hero_anim = {
@@ -70,15 +83,15 @@ Hero_anim = {
 			$(document).queue("Animation",FUNC);
 			aniCB()
 	     },
-		second: function(){
-			$("#second-hero .span4").css({position: "relative", left: -50, opacity: 0})
-			$("#second-hero .span11 > *").css({position: "relative", top: 50, opacity: 0})
+		third: function(){
+			$("#third-hero .span4").css({position: "relative", left: -50, opacity: 0})
+			$("#third-hero .span11 > *").css({position: "relative", top: 50, opacity: 0})
 			
 			var FUNC=[
-			function() {$("#second-hero .span4").animate({left: 0, opacity: 1}, 1000, aniCB);}
+			function() {$("#third-hero .span4").animate({left: 0, opacity: 1}, 1000, aniCB);}
 			];
 			
-			$("#second-hero .span11 > *").each(function(e){
+			$("#third-hero .span11 > *").each(function(e){
 													var $this = $(this)
 													FUNC.push( function(){$this.animate({top: 0, opacity: 1}, 500, aniCB);} )
 				                             })
@@ -89,11 +102,27 @@ Hero_anim = {
 			$(document).queue("Animation",FUNC);
 			aniCB()
 		 },
-		 third: function(){
-			$("#third-hero .span-one-third").css({position: "relative", top: -300, opacity: 0})
-			$("#third-hero .span8").css({position: "relative", top: 300, opacity: 0})
+		 forth: function(){
+			$("#forth-hero .span-one-third").css({position: "relative", top: -300, opacity: 0})
+			$("#forth-hero .span8").css({position: "relative", top: 300, opacity: 0})
 			
-			$("#third-hero .span-one-third").animate({top: 0, opacity: 1}, 1000)
-			$("#third-hero .span8").animate({top: 0, opacity: 1}, 1000)
-		 }
+			$("#forth-hero .span-one-third").animate({top: 0, opacity: 1}, 1000)
+			$("#forth-hero .span8").animate({top: 0, opacity: 1}, 1000)
+		 },
+		 second: function() {
+			$("#second-hero img").css({opacity: 0})
+			$("#second-hero h2").css({marginRight: -570, opacity: 0})
+			$("#second-hero p").css({position: "relative", top: 50, opacity: 0})
+
+			$("#second-hero img").animate({opacity: 1}, 3000)
+			var FUNC=[
+			function() {$("#second-hero h2").animate({marginRight: 0, opacity: 1}, 1500, aniCB);},
+			function() {$("#second-hero p").animate({top: 0, opacity: 1}, 1500, aniCB);}
+			];
+			var aniCB=function() {
+				$(document).dequeue("Animation");
+			}
+			$(document).queue("Animation",FUNC);
+			aniCB()
+	     }
 }
