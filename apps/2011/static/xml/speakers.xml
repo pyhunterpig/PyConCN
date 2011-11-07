@@ -170,4 +170,14 @@
 		<avatar>diaolizhi.jpg</avatar>
 		<speech>快速演讲：《用Python改进迅雷离线 — A Python Successful Story》</speech>
 	</speaker>
+	
+	<speaker>
+	    <fullname>李俊东</fullname>
+		<nickname></nickname>
+		<company>阿里云</company>
+		<position></position>
+		<desc>从业11年，给Python跑了8年的龙套。DOS年代起步，Windows桌面成长，赶上WEB的潮流，迈向未来的"云"时代。</desc>
+		<avatar>lijundong.jpg</avatar>
+		<speech>快速演讲：《与Python一路走来》</speech>
+	</speaker>
 </speakers>
