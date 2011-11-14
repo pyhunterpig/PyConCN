@@ -5,7 +5,7 @@
     Version: 2011.11.1
 */
 $(function(){
-	$.get("/static/xml/speakers.xml", function(data){
+	$.get(speakers, function(data){
 		speakers = data
 		var $tds = $("tr td:nth-child(3)")
 		$(data).find("speaker").each(function(i, e){

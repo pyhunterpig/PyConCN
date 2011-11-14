@@ -2,6 +2,9 @@
 {{block meta}}
 <script type="text/javascript" src="{{=url_for_static('js/bootstrap-twipsy.js')}}"></script>
 <script type="text/javascript" src="{{=url_for_static('js/bootstrap-popover.js')}}"></script>
+<script type="text/javascript">
+    speakers = "{{=_('/static/xml/speakers-cn.xml')}}"
+</script>
 <script type="text/javascript" src="{{=url_for_static('js/schedule.js')}}"></script>
 <link rel="stylesheet" type="text/css" href="{{=url_for_static('css/schedule.css')}}" />
 {{end}}
