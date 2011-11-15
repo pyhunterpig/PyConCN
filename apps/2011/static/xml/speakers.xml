@@ -21,13 +21,13 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>赖勇浩</fullname>
+	    <fullname>林伟</fullname>
 		<nickname></nickname>
-		<company>江苏盛典</company>
-		<position>技术总监</position>
-		<desc>网游行业资深从业者，有丰富的 python 游戏开发经验。由其担纲的代表游戏有，新一代 MMOCAT大作《天下盛境》等。是珠三角技术沙龙的创办人和组委之一。</desc>
-		<avatar>laiyonghao.jpg</avatar>
-		<speech>《Python 之于 Webgame 的应用》</speech>
+		<company>网易</company>
+		<position>资深技术主管</position>
+		<desc>网易资深技术主管，17年程序设计经验。</desc>
+		<avatar>linwei.jpg</avatar>
+		<speech>《Python游戏开发探索与发现》</speech>
 	</speaker>
 	
     <speaker>
@@ -121,13 +121,13 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>林伟</fullname>
+	    <fullname>赖勇浩</fullname>
 		<nickname></nickname>
-		<company>网易</company>
-		<position>资深技术主管</position>
-		<desc>网易资深技术主管，17年程序设计经验。</desc>
-		<avatar>linwei.jpg</avatar>
-		<speech>《Python游戏开发探索与发现》</speech>
+		<company>江苏盛典</company>
+		<position>技术总监</position>
+		<desc>网游行业资深从业者，有丰富的 python 游戏开发经验。由其担纲的代表游戏有，新一代 MMOCAT大作《天下盛境》等。是珠三角技术沙龙的创办人和组委之一。</desc>
+		<avatar>laiyonghao.jpg</avatar>
+		<speech>《Python 之于 Webgame 的应用》</speech>
 	</speaker>
 	
 	<speaker>
