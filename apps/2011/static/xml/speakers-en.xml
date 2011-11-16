@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <speakers>
     <speaker>
-	    <fullname>陈世欣</fullname>
+	    <fullname>Chen Shixin</fullname>
 		<nickname>Sting Chen</nickname>
 		<company>2Style4You</company>
 		<position>CTO</position>
@@ -11,7 +11,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>沈崴</fullname>
+	    <fullname>Shen Wei</fullname>
 		<nickname></nickname>
 		<company></company>
 		<position></position>
@@ -21,7 +21,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>林伟</fullname>
+	    <fullname>Lin Wei</fullname>
 		<nickname></nickname>
 		<company>网易</company>
 		<position>资深技术主管</position>
@@ -31,7 +31,7 @@
 	</speaker>
 	
     <speaker>
-	    <fullname>洪强宁</fullname>
+	    <fullname>Hung Qiangning</fullname>
 		<nickname></nickname>
 		<company>豆瓣</company>
 		<position>首席架构师</position>
@@ -51,7 +51,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>潘俊勇</fullname>
+	    <fullname>Pan Junyong</fullname>
 		<nickname></nickname>
 		<company>润普科技</company>
 		<position>创始人，CTO</position>
@@ -61,7 +61,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>黄冬</fullname>
+	    <fullname>Huang Dong</fullname>
 		<nickname></nickname>
 		<company>土豆网</company>
 		<position>技术副总裁</position>
@@ -71,7 +71,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>陈正</fullname>
+	    <fullname>Chen Zheng</fullname>
 		<nickname></nickname>
 		<company>新浪网</company>
 		<position></position>
@@ -111,7 +111,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>李迎辉</fullname>
+	    <fullname>Li Yinghui</fullname>
 		<nickname>Limodou</nickname>
 		<company></company>
 		<position></position>
@@ -121,7 +121,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>赖勇浩</fullname>
+	    <fullname>Lai Yonghao</fullname>
 		<nickname></nickname>
 		<company>江苏盛典</company>
 		<position>技术总监</position>
@@ -131,7 +131,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>王健</fullname>
+	    <fullname>Wang Jian</fullname>
 		<nickname></nickname>
 		<company>广州黑崖网络科技有限公司</company>
 		<position>总经理兼技术总监</position>
@@ -141,7 +141,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>周琦</fullname>
+	    <fullname>Zhou Qi</fullname>
 		<nickname>Zoom.Quiet</nickname>
 		<company>金山网络</company>
 		<position>过程改进经理</position>
@@ -151,7 +151,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>王剑峰</fullname>
+	    <fullname>Wang Jianfeng</fullname>
 		<nickname></nickname>
 		<company>OpenERP</company>
 		<position></position>
@@ -162,7 +162,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>刁立知</fullname>
+	    <fullname>Diao Lizhi</fullname>
 		<nickname>Adieu</nickname>
 		<company></company>
 		<position></position>
@@ -172,7 +172,7 @@
 	</speaker>
 	
 	<speaker>
-	    <fullname>李俊东</fullname>
+	    <fullname>Li Jundong</fullname>
 		<nickname></nickname>
 		<company>阿里云</company>
 		<position></position>
