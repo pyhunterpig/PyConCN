@@ -21,7 +21,7 @@ $(function(){
 	$(".has_sub_schedule").click(function(){
 		                       $(this).children('ul').slideDown('slow').end().siblings('.has_sub_schedule').children('ul').slideUp('slow')
 		                   })
-	$.get(speakers, function(data){
+	$.get('/static/xml/speakers-' + LANG + '.xml', function(data){
 		var $imgs = $(".speakers img")
 		$(data).find("speaker").each(function(i, speaker){
 			var fullname = $(speaker).children("fullname").text()

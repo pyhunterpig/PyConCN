@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-11-16 17:22\n"
+"POT-Creation-Date: 2011-11-16 17:48\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: .\apps\2011\templates\index.html:12
 #: .\apps\2011\templates\siteView\schedule.html:8
-msgid "/static/xml/speakers-cn.xml"
+msgid "cn"
 msgstr ""
 
 #: .\apps\2011\templates\index.html:20 .\apps\2011\templates\index.html:34
