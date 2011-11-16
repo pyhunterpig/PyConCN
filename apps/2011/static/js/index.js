@@ -2,7 +2,7 @@
     JavaScript for PyCon China Offical Website
     Author: Datong Sun (Dndx)
     Blog: idndx.com
-    Version: 2011.10.31
+    Version: 2011.11.16
 */
 $(function(){
     $("#hero-selector > div").filter(":first").addClass('active').end()
@@ -26,7 +26,7 @@ $(function(){
 		$(data).find("speaker").each(function(i, speaker){
 			var fullname = $(speaker).children("fullname").text()
 			$imgs.each(function(i, e){
-				if ($(e).attr('alt').indexOf(fullname) != -1){
+				if ($(e).attr('alt') == fullname){
 					var html = ""
 					if ($(speaker).children('nickname').text()){
 						html += '<h4>' + $(speaker).children('nickname').text() + '（' + fullname + '）' + '</h4>'
