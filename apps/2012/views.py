@@ -4,11 +4,11 @@ from uliweb import expose
 from uliweb.orm import get_model
 from uliweb import request
 
-@expose('/2011/')
+@expose('/2012/')
 def index():
     return {} #'<h1>Hello, Uliweb</h1>'
 
-@expose('/2011')
+@expose('/2012')
 class siteView(object):
         
     def about(self):

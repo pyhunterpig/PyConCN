@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<speakers>
+    <speaker>
+	    <fullname>陈世欣</fullname>
+		<nickname>Sting Chen</nickname>
+		<company>2Style4You</company>
+		<position>CTO</position>
+		<desc>TopGeek社区创办人，现在全球领先的时尚科技公司2Style4You.com任CTO,1999年硕士毕业于上海交通大学计算机系，具有13年的互联网技术和互联网产品技术经验，还发起PMCamp社区等。也是ThinkinLAMP，ShanghaiOnRails，CPyUG，GTUG等社区的参与者或组织者。</desc>
+		<avatar>chenshixin.jpg</avatar>
+		<speech>大会致辞《Python让世界更精彩》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>郝培强</fullname>
+		<nickname></nickname>
+		<company></company>
+		<position></position>
+		<desc>郝培强(Tinyfool)，有道词典第一版作者、前盛大创新院高级研究员、iOS专家、iApp4Me创始人。</desc>
+		<avatar>haopeiqiang.jpg</avatar>
+		<speech>iOS平台开发者的机遇和挑战</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>李亮</fullname>
+		<nickname>Holly Lee</nickname>
+		<company>上海改变科技有限公司</company>
+		<position>CTO</position>
+		<desc>李亮本人有20多年的软件开发经理，从嵌入式系统到企业开发均有研究。目前致力与移动计算与云计算方向，他还是iOS第一个输入法iCosta for iPhone以及RockPlayer for Android的主要开发者之一。RockPlayer是Android平台上全球最成功的媒体播放工具，受到了广大用户的好评，目前为止累计下载数量大概在三千万左右。最新推出的iOS平台上的演讲工具AirSlides。</desc>
+		<avatar>liliang.jpg</avatar>
+		<speech>《移动应用开发的技术路线选择》</speech>
+	</speaker>
+	
+    <speaker>
+	    <fullname>端木恒</fullname>
+		<nickname></nickname>
+		<company>腾讯</company>
+		<position></position>
+		<desc>曾为苹果公司工作6年，任职于Worldwide Developer Relations、Asia Education Strategy Development等部门，并作为独立顾问负责苹果与富士康的社会责任感教育联合项目。后加入腾讯，负责微博和QQ产品线在iOS/Android/Mac平台的产品工作。他曾在多种公共活动分享产品设计演讲，并在包括搜狐、腾讯、豆瓣等公司内分享产品设计经验。目前在一个初创团队负责产品工作。</desc>
+		<avatar>duanmuheng.jpg</avatar>
+		<speech>《移动产品设计》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>杨武</fullname>
+		<nickname>品雪</nickname>
+		<company></company>
+		<position></position>
+		<desc>前思科系统中国研发有限公司软件工程师，同济大学MBA。从事软件开发近14年，近年来关注移动应用开发，也是iOS第一个输入法iCosta for iPhone以及RockPlayer for Android的主要开发者之一，最新作品是iOS平台上的演讲工具AirSlides。AirSlides是一款针对演讲、会议、教学等场合进行展示、共享和协作的工具。AirSlides让演讲者、教师、发言人不再被电脑所在的位置束缚, 能够在演讲过程中, 在一定范围之内自由走动, 同时还能够随时看到自己的讲稿的工具应用。通过在演讲者手持的 iPad 上显示演讲内容, 实时将内容同步传输到一个与投影仪相连接的 iDevice 上, 由这个iDevice 将内容输出到投影仪, 从而获得随意移动的能力. 另外, AirSlides 还提供了 VoIP 的音频传输能力, 以及演讲者能够在演讲过程中随意标注并能让所有人看到的功能。</desc>
+		<avatar>yangwu.gif</avatar>
+		<speech>《移动产品可用性设计》</speech>
+	</speaker>
+	
+	<speaker>
+	    <fullname>孔详波</fullname>
+		<nickname>yarshure</nickname>
+		<company>盛大创新院</company>
+		<position>高级研究员</position>
+		<desc>研究技术领域包括：iOS/Mac/FreeBSD/Python/Canon5D2，先前就职于国内著名网络公司，FreeBSD系统使用者。曾两次参加WWDC，对iPhone开发有较深入的研究。 个人博客 http://iPhone.ipsw.info。</desc>
+		<avatar>kongxiangbo.png</avatar>
+		<speech>《iOS调试实战》</speech>
+	</speaker>
+
+    <speaker>
+	    <fullname>屠毅敏</fullname>
+		<nickname></nickname>
+		<company>大众点评网</company>
+		<position>移动研发首席工程师</position>
+		<desc>08年开始从事iOS及Android相关的研发工作，独立搭建了点评所有移动客户端的第一版，当前的研究领域集中在移动领域的前沿技术，包括移动定位优化算法，声音编码，短接数据交换等。</desc>
+		<avatar>tuhongyi.jpg</avatar>
+		<speech>《iOS应用开发最佳实践》</speech>
+	</speaker>
+</speakers>
