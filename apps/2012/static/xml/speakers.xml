@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <speakers>
-    <speaker>
-	    <fullname>陈世欣</fullname>
-		<nickname>Sting Chen</nickname>
-		<company>2Style4You</company>
-		<position>CTO</position>
-		<desc>TopGeek社区创办人，现在全球领先的时尚科技公司2Style4You.com任CTO,1999年硕士毕业于上海交通大学计算机系，具有13年的互联网技术和互联网产品技术经验，还发起PMCamp社区等。也是ThinkinLAMP，ShanghaiOnRails，CPyUG，GTUG等社区的参与者或组织者。</desc>
-		<avatar>chenshixin.jpg</avatar>
-		<speech>大会致辞《Python让世界更精彩》</speech>
-	</speaker>
-	
 	<speaker>
 	    <fullname>郝培强</fullname>
 		<nickname></nickname>
