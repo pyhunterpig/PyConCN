@@ -1,0 +1,15 @@
+{{extend "bootstrap_layout.html"}}
+
+{{block content}}
+<h1>会场交通</h1>
+<h2>场馆位置：</h2>
+    <div class="row show-grid" style="padding-top: 15px;">
+        <div class="span8">
+            <img src="{{=url_for_static('images/venue/KIC_ditu.jpg')}}" width="400" />
+        </div>
+        <p><strong>大会地点：</strong>上海杨浦区淞沪路234号创智天地多功能厅</p>
+        <p><strong>地铁：</strong>十号线五角场站，步行五分钟即到</p>
+        <p><strong>自驾：</strong>园区内设有停车位</p>
+    </div><!--END span8-->
+    <div style="clear:both;"></div>
+{{end}}

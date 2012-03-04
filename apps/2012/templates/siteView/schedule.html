@@ -1,0 +1,92 @@
+{{extend "bootstrap_layout.html"}}
+{{block meta}}
+<script type="text/javascript" src="{{=url_for_static('js/bootstrap-twipsy.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/bootstrap-popover.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/schedule.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('css/schedule.css')}}" />
+{{end}}
+{{block content}}
+<h1>日程安排</h1>
+<table class="zebra-striped">
+        <tr>
+            <th>日期</th>
+            <th>时间</th>
+            <th>项目</th>
+            <th>演讲者</th>
+            <th>主题</th>
+        </tr>
+       
+        <tr>
+            <td rowspan="17" class="date">2012年3月25日</td>
+        </tr>
+        <tr class="break">
+            <td>08:30-09:20</td>
+            <td>签到</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>09:20-09:30</td>
+            <td>主办方和赞助者介绍</td>
+            <td style="width:130px;">组织者以及赞助商代表</td>
+            <td>包括来自赞助商Google，主办方GTUG， TopGeek， iOSCon的代表进行组织介绍。</td>
+        </tr>
+        <tr>
+            <td>09:30-09:35</td>
+            <td>大会致辞《iOSCon让世界更精彩》</td>
+            <td>陈世欣</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>09:35-10:30</td>
+            <td>《iOS平台开发者的机遇和挑战》</td>
+            <td>郝培强</td>
+            <td>有道词典第一版作者、前盛大创新院高级研究员、iOS专家、iApp4Me创始人</td>
+        </tr>
+         <tr class="break">
+            <td>10:30-10:45</td>
+            <td>休息</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>10:45-12:00</td>
+            <td>《移动产品可用性设计》</td>
+            <td>杨武</td>
+            <td>杨武 iOS第一个输入法iCosta作者、Android播放器Rocketplayer作者</td>
+        </tr>
+       
+      
+        <tr class="break">
+            <td>12:00-13:00</td>
+            <td>午餐</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>13:00-14:00</td>
+            <td>《移动应用开发的技术路线选择》</td>
+            <td>李亮</td>
+            <td>iOS第一个输入法iCosta作者、Android播放器Rocketplayer作者</td>
+        </tr>
+        <tr>
+            <td>14:00-15:00</td>
+            <td>《移动产品设计》</td>
+            <td>端木恒 </td>
+            <td>前苹果员工，前腾讯微博高级产品经理</td>
+        </tr>
+        <tr class="break">
+            <td>15:00-15:20</td>
+            <td>茶歇</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>15:20-16:45</td>
+            <td>《iOS调试实战》</td>
+            <td>孔详波 </td>
+            <td>盛大创新院高级研究员、iOS专家</td>
+        </tr>
+  
+</table>
+{{end}}
