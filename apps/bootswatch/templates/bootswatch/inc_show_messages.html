@@ -1,0 +1,12 @@
+{{
+def message(msg, category="info"):
+    if msg:
+        out.xml('<div class="alert alert-%s">' % (category))
+        out.xml('<a class="close" data-dismiss="alert" href="#">×</a>')
+        out.xml('<p>')
+        out.xml(msg)
+        out.xml('<p>')
+        out.xml('</div>')
+    pass
+pass
+}}

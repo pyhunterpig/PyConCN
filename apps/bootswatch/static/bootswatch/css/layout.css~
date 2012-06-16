@@ -1,0 +1,15 @@
+/*
+    Styles for PyCon China Offical Website
+    Author: pyhunterpig (Steve Zhi)
+    Version: 2012.05.29
+*/
+@charset "utf-8";
+body {
+  position: relative;
+  padding-top: 90px;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+}
+
+#footer {margin-top: 17px; padding-top: 17px; border-top: 1px solid #eee;}
+

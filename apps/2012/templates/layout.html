@@ -1,0 +1,26 @@
+{{extend "bootswatch/layout.html"}}
+
+
+{{block header}}
+{{include "2012/menu.html"}}
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a style="background:url({{=settings.LAYOUT.LOGO}}) no-repeat; padding-left:45px;" class="brand" href="/">{{block project}}PyCon China 2012{{end}}</a>
+      <div class="nav-collapse">
+        {{block nav}}
+        {{menu('home',menus)}}
+        {{end}}
+      {{block user_info}}<p class="pull-right"></p>{{end user_info}}
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}
+
+

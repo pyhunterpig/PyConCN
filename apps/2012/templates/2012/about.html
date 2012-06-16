@@ -1,0 +1,13 @@
+{{extend "2012/default.html"}}
+{{block title}}
+{{=_('关于大会')}}  -- PyCon China 2012
+{{end}}
+
+{{block nav}}
+{{menu('about',menus)}}
+{{end}}
+
+
+{{block content}}
+{{<< pagecontent}}
+{{end}}

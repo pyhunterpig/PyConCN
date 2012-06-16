@@ -1,0 +1,18 @@
+{{extend "2012/default.html"}}
+{{block userinfo}}{{end}}
+{{block title}}
+{{=_('登录')}}  -- PyCon China 2012
+{{end}}
+{{block content}}
+<div class="content">
+    <div class="box center col_10 box_shadow">
+        <h2>{{=_('登录')}}</h2>
+        <div class="box-body">
+            {{if msg:}}
+            <p style="background:#f48b99;padding:2px;">{{<<msg}}</p>
+            {{pass}}
+            {{<< form}}
+        </div>
+    </div>
+</div>
+{{end}}

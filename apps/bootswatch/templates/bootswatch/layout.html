@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{block title}}{{end}}</title>
+{{block meta}}
+<meta name="description" content="">
+<meta name="author" content="Pyhunterpig (Steve Zhi)" />
+{{end}}
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="{{=url_for_static('bootswatch/js/html5.js')}}"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('bootswatch/css/%s/bootstrap.min.css' %settings.BOOTSWATCH.THEME, ver='2.0.3')}}" />
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('bootswatch/css/bootstrap-responsive.min.css', ver='2.0.3')}}" />
+{{block _css}}
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('bootswatch/css/layout.css')}}" />
+{{end}}
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery-1.7.2.min.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery.cookie.js', ver='2011.7.8')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/bootstrap.min.js')}}"></script>
+{{block _js}}
+{{end}}
+</head>
+
+<body  data-spy="scroll" data-target=".subnav" data-offset="50">
+{{block header}}
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">{{block project}}Project name{{end}}</a>
+      <div class="nav-collapse">
+        {{block nav}}
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        {{end}}
+      {{block user_info}}<p class="pull-right">Logged in as <a href="#">username</a></p>{{end user_info}}
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+{{end}}
+<div class="container" id="main_container">
+    <!--[if lt IE 7]><div style=" clear: both; height: 59px; padding:0 0 0 15px; position: relative;"> <a target="_blank" href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.cn/img/banner/upgrade.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+    {{block messages}} <!--In what condition to show messages-->
+        {{include "bootswatch/inc_show_messages.html"}}
+        {{if settings.GLOBAL.DEBUG:}}
+            {{message('Test', 'info')}} <!--Show message "Test" with level info, optical levels are "warning", "success", "error", "info"-->
+            {{message('<b>Test:</b> testest.', 'success')}}
+        {{pass}}
+    {{end}}
+
+    {{block content}}
+    {{end}}
+    <hr>
+        <div id="footer">
+            {{block footer}}
+            PyCon China 2012<br/>Site built by <a href="http://topgeek.org">TopGeek</a> using <a href="https://github.com/limodou/uliweb">UliWeb</a>, <a href="http://www.jquery.com/">jQuery</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, <a href="http://www.nginx.org/">Nginx</a>&amp;<a href="http://www.tornadoweb.org/">Tornado</a> as Web Server.<br/>Website CDN provider: <a href="http://www.upyun.com/">又拍云存储(UpYun)</a> <br/><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a>
+            {{end footer}}
+        </div><!--END footer-->
+    </div><!--END container-->
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery-1.7.2.min.js', ver='1.7.2')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/bootstrap.min.js')}}"></script>
+
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-26284394-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+</body>
+</html>

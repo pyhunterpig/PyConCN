@@ -1,0 +1,25 @@
+/*
+    Styles for PyCon China Offical Website
+    Author: pyhunterpig (Steve Zhi)
+    Version: 2012.05.29
+*/
+@charset "utf-8";
+body {
+  position: relative;
+  padding-top: 90px;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+}
+/* Faded out hr */
+hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+#footer {margin-top: 17px; padding-top: 17px; border-top: 1px solid #eee;}
+

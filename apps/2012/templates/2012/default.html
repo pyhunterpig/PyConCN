@@ -1,0 +1,54 @@
+{{extend "bootswatch/layout.html"}}
+
+{{block _js}}
+<script type="text/javascript" src="{{=url_for_static('js/layout.js')}}"></script>
+{{end}}
+
+{{block title}}
+{{=pageTitle}}
+{{end}}
+
+{{block header}}
+{{include "2012/menu.html"}}
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a style="background:url({{=settings.LAYOUT.LOGO}}) no-repeat; padding-left:45px;" class="brand" href="/">{{block project}}PyCon China 2012{{end}}</a>
+      <div class="nav-collapse">
+        {{block nav}}
+        {{menu('home',menus)}}
+        {{end}}
+        <ul class="pull-right nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" hfef="#">Site Language<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a class="cn">简体中文</a></li>
+                    <li class="divider"></li>
+                    <li><a class="en">English</a></li>
+                </ul>
+            </li>
+        </ul>      
+      {{block user_info}}<p class="pull-right"></p>{{end user_info}}
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{block messages}} 
+    {{include "bootswatch/inc_show_messages.html"}}
+    {{for msgtext, msgtype in msg or [('','')]:}}
+    {{    message(msgtext, msgtype)}} 
+    {{pass}}
+{{end}}
+
+{{block content}}
+<div class="well">
+{{<< pagecontent}}
+</div>
+{{end}}
