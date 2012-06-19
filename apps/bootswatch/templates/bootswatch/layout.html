@@ -19,11 +19,6 @@
 {{block _css}}
 <link rel="stylesheet" type="text/css" href="{{=url_for_static('bootswatch/css/layout.css')}}" />
 {{end}}
-<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery-1.7.2.min.js')}}"></script>
-<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery.cookie.js', ver='2011.7.8')}}"></script>
-<script type="text/javascript" src="{{=url_for_static('bootswatch/js/bootstrap.min.js')}}"></script>
-{{block _js}}
-{{end}}
 </head>
 
 <body  data-spy="scroll" data-target=".subnav" data-offset="50">
@@ -70,8 +65,11 @@
             {{end footer}}
         </div><!--END footer-->
     </div><!--END container-->
-<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery-1.7.2.min.js', ver='1.7.2')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery-1.7.2.min.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('bootswatch/js/jquery.cookie.js', ver='2011.7.8')}}"></script>
 <script type="text/javascript" src="{{=url_for_static('bootswatch/js/bootstrap.min.js')}}"></script>
+{{block _js}}
+{{end}}
 
 <script type="text/javascript">
 
